@@ -131,6 +131,34 @@
   - Статус: `implemented`
 - **Повертає:** масив `ProductListItemDto` (у т.ч. `availableQty`, `availabilityStatus`).
 
+## `GET /catalog/products/on-sale`
+
+- **Summary (1 рядок):** Сторінка активних товарів зі знижкою.
+- **Призначення:** публічний список активних товарів, що зараз мають знижку.
+- **Хто може викликати:** JWT не потрібна.
+- **Бізнес-логіка:** застосувати фільтри каталогу, отримати товари зі знижкою через Elasticsearch або fallback на БД, агрегувати наявність та додати URL зображень.
+- **Приймає:** `categoryIds`, `companyId`, `minPrice`, `maxPrice`, `minDiscountPercent`, `availabilityStatus`, `sort`, `page` (default 1), `pageSize` (default 20, max 200), `searchAfter`.
+- **Повертає:** `ProductSearchResultDto` з `items`, `total`, `page`, `pageSize`, `nextSearchAfter`.
+- **Примітки:** сортування за замовчуванням — `discount_desc`; також handler підтримує `price_asc`, `price_desc`, `newest`.
+
+## `GET /catalog/products/new`
+
+- **Summary (1 рядок):** Сторінка нових активних товарів.
+- **Призначення:** показати нещодавно створені товари з каталогу.
+- **Хто може викликати:** JWT не потрібна.
+- **Бізнес-логіка:** застосувати фільтри категорії, компанії, ціни й наявності; використати Elasticsearch або fallback на БД; збагатити результат зображеннями.
+- **Приймає:** `categoryIds`, `companyId`, `minPrice`, `maxPrice`, `availabilityStatus`, `page` (default 1), `pageSize` (default 20, max 200), `searchAfter`.
+- **Повертає:** `ProductSearchResultDto` з `items`, `total`, `page`, `pageSize`, `nextSearchAfter`.
+
+## `GET /catalog/products/popular`
+
+- **Summary (1 рядок):** Сторінка популярних активних товарів.
+- **Призначення:** показати популярні товари з каталогу за поточним джерелом пошуку або fallback на БД.
+- **Хто може викликати:** JWT не потрібна.
+- **Бізнес-логіка:** застосувати фільтри категорії, компанії, ціни й наявності; використати Elasticsearch або fallback на БД; збагатити результат зображеннями.
+- **Приймає:** `categoryIds`, `companyId`, `minPrice`, `maxPrice`, `availabilityStatus`, `page` (default 1), `pageSize` (default 20, max 200), `searchAfter`.
+- **Повертає:** `ProductSearchResultDto` з `items`, `total`, `page`, `pageSize`, `nextSearchAfter`.
+
 ## `GET /catalog/products/facets`
 
 - **Summary (1 рядок):** Унікальні значення фільтрів каталогу (authors, genres, formats, tags).
