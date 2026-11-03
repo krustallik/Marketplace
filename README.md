@@ -2,6 +2,10 @@
 
 Booktop is a full-stack marketplace application with a book-focused storefront and a multi-layer .NET API. It brings together public catalog browsing, account flows, company operations, and the infrastructure needed to run the application locally.
 
+## Project context and contribution
+
+This was my diploma project at IT Step Academy, a private IT academy. My contribution focused on frontend development. I worked in a five-person, cross-functional team: one frontend developer (me), one backend developer, two designers, and one DevOps engineer. The project gave me experience coordinating work across frontend, backend, design, and DevOps.
+
 ## Screenshots
 
 These screenshots were captured from the running application with its development seed data.
