@@ -10,21 +10,21 @@ This was my diploma project at IT Step Academy, a private IT academy. My contrib
 
 These screenshots were captured from the running application with its development seed data.
 
-| Storefront | Catalog and filters |
+| Desktop storefront | Mobile catalog |
 | --- | --- |
-| ![Booktop home page](docs/images/homepage.jpg) | ![Booktop product catalog](docs/images/catalog.jpg) |
+| ![Booktop desktop home page](docs/images/homepage.jpg) | ![Booktop mobile product catalog](docs/images/catalog.jpg) |
 
-### Product details
+### Product details — desktop
 
-![Product details page](docs/images/product-details.jpg)
+![Desktop product details page](docs/images/product-details.jpg)
 
-### Shopping cart
+### Shopping cart — mobile
 
-![Shopping cart with items](docs/images/cart.jpg)
+![Mobile shopping cart with items](docs/images/cart.jpg)
 
-### Checkout and payment
+### Checkout and payment — desktop
 
-![Checkout form with payment options](docs/images/checkout-payment.jpg)
+![Desktop checkout form with payment options](docs/images/checkout-payment.jpg)
 
 ## What it includes
 
