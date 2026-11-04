@@ -14,17 +14,17 @@ These screenshots were captured from the running application with its developmen
 | --- | --- |
 | ![Booktop home page](docs/images/homepage.jpg) | ![Booktop product catalog](docs/images/catalog.jpg) |
 
-### Сторінка товару
+### Product details
 
-![Детальна сторінка товару](docs/images/product-details.jpg)
+![Product details page](docs/images/product-details.jpg)
 
-### Кошик
+### Shopping cart
 
-![Кошик із товарами](docs/images/cart.jpg)
+![Shopping cart with items](docs/images/cart.jpg)
 
-### Оформлення замовлення та оплата
+### Checkout and payment
 
-![Форма оформлення замовлення з варіантами оплати](docs/images/checkout-payment.jpg)
+![Checkout form with payment options](docs/images/checkout-payment.jpg)
 
 ## What it includes
 
