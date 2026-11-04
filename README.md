@@ -14,6 +14,18 @@ These screenshots were captured from the running application with its developmen
 | --- | --- |
 | ![Booktop home page](docs/images/homepage.jpg) | ![Booktop product catalog](docs/images/catalog.jpg) |
 
+### Сторінка товару
+
+![Детальна сторінка товару](docs/images/product-details.jpg)
+
+### Кошик
+
+![Кошик із товарами](docs/images/cart.jpg)
+
+### Оформлення замовлення та оплата
+
+![Форма оформлення замовлення з варіантами оплати](docs/images/checkout-payment.jpg)
+
 ## What it includes
 
 - Browse products and categories; search and filter by catalog attributes, price, and availability.
